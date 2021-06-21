@@ -1,6 +1,8 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 100px;
+  display: block;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
@@ -9,7 +11,7 @@
 .container {
   margin: 0 auto;
   width: 50%;
-  height: 600px;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +24,11 @@
   align-items: center;
   padding: 5%;
   color: hsla(0, 0%, 100%, 0.75);
+  gap: 20px;
+}
+
+.card p {
+  flex-grow: 2;
 }
 
 .left {
@@ -42,4 +49,27 @@
 
 .blue {
   background-color: hsl(184, 100%, 22%);
+}
+
+.btn {
+  width: 150px;
+  height: 50px;
+  background-color: hsla(0, 0%, 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+  }
+  .card {
+    border-radius: 5px;
+    width: 75%;
+    margin: 5%;
+  }
 }
