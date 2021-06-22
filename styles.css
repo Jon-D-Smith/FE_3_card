@@ -1,3 +1,4 @@
+/* Attribution footer */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -6,6 +7,8 @@
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+/* Setting up main flex styling, height, and width */
 body {
   height: 90vh;
 }
@@ -16,7 +19,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
 }
 .card {
   height: 50%;
@@ -29,10 +31,29 @@ body {
   gap: 20px;
 }
 
+/* text and font se */
+h2 {
+  font-weight: 700;
+  font-family: "Big Shoulders Display", cursive;
+}
 .card p {
   height: 50%;
+  font-weight: 400;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
 }
 
+.green-text {
+  color: hsl(179, 100%, 13%);
+}
+.blue-text {
+  color: hsl(184, 100%, 22%);
+}
+.yellow-text {
+  color: hsl(31, 77%, 52%);
+}
+
+/*  Borders */
 .left {
   border-radius: 5px 0 0 5px;
 }
@@ -41,30 +62,18 @@ body {
   border-radius: 0 5px 5px 0;
 }
 
+/* Card colors */
 .yellow {
   background-color: hsl(31, 77%, 52%);
 }
-
-.yellow-text {
-  color: hsl(31, 77%, 52%);
-}
-
 .green {
   background-color: hsl(179, 100%, 13%);
 }
-
-.green-text {
-  color: hsl(179, 100%, 13%);
-}
-
 .blue {
   background-color: hsl(184, 100%, 22%);
 }
 
-.blue-text {
-  color: hsl(184, 100%, 22%);
-}
-
+/* Buttons */
 .btn {
   width: 150px;
   height: 50px;
@@ -82,6 +91,7 @@ body {
   color: hsl(0, 0%, 95%);
 }
 
+/* Styling for smaller screens */
 @media only screen and (max-width: 400px) {
   .container {
     width: 90%;
