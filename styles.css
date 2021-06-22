@@ -1,34 +1,36 @@
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-top: 100px;
   display: block;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
-
+body {
+  height: 90vh;
+}
 .container {
   margin: 0 auto;
   width: 50%;
-  height: 800px;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 15px;
 }
 .card {
   height: 50%;
-  display: flex;
+  display: flex block;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: left;
   padding: 5%;
   color: hsla(0, 0%, 100%, 0.75);
   gap: 20px;
 }
 
 .card p {
-  flex-grow: 2;
+  height: 50%;
 }
 
 .left {
@@ -43,18 +45,30 @@
   background-color: hsl(31, 77%, 52%);
 }
 
+.yellow-text {
+  color: hsl(31, 77%, 52%);
+}
+
 .green {
   background-color: hsl(179, 100%, 13%);
+}
+
+.green-text {
+  color: hsl(179, 100%, 13%);
 }
 
 .blue {
   background-color: hsl(184, 100%, 22%);
 }
 
+.blue-text {
+  color: hsl(184, 100%, 22%);
+}
+
 .btn {
   width: 150px;
   height: 50px;
-  background-color: hsla(0, 0%, 100%);
+  background-color: hsl(0, 0%, 95%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,14 +76,30 @@
   text-decoration: none;
 }
 
+.btn:hover {
+  background-color: hsl(0, 0%, 0%, 0);
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
 @media only screen and (max-width: 400px) {
   .container {
-    width: 100%;
+    width: 90%;
+    height: 900px;
     flex-direction: column;
+    margin-top: 50px;
   }
   .card {
-    border-radius: 5px;
-    width: 75%;
-    margin: 5%;
+    padding: 5%;
+  }
+
+  .card p {
+    height: 30%;
+  }
+  .left {
+    border-radius: 5px 5px 0 0;
+  }
+  .right {
+    border-radius: 0 0 5px 5px;
   }
 }
